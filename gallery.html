@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="/CSS/style.css">`
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="hamburger">☰</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="article.html">Article</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Site banner -->
+    <div class="banner">
+        <img src="/Images/title.jpg" alt="Newspaper website banner reading: 'The Evening Apex'">
+    </div>
+
+    <main class="photo-gallery">
+        <div class="photo"><img src="/Images/ghost-town.jpg" alt="A broken-down van in front of an abandoned building"></div>
+        <div class="photo"><img src="/Images/hh-fire.JPG" alt="Firefighters hosing down a house fire at night"></div>
+        <div class="photo"><img src="/Images/ghost-ship.jpg" alt="A ghost ship washed up on shore"></div>
+        <div class="photo"><img src="/Images/pumpkin.JPG" alt="A truck hood full of pumpkins"></div>
+        <div class="photo"><img src="/Images/the-beast.JPG" alt="A character called The Beast, from the show 'Over the Garden Wall'"></div>
+
+        <div class="gallery-controls">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
+    </main>
+
+    <!-- Nav controls -->
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+            });
+    </script>
+
+    <footer>
+        <p>
+            Contact us at takinrol@students.kennesaw.edu.
+        </p>
+    </footer>
+
+</body>
+</html>
